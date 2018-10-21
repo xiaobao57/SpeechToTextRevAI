@@ -29,7 +29,7 @@ item_dict = json.loads(json_data)
 
 
 for i in range(len(item_dict['monologues'])):
-	print("Speaker: " + transcript['monologues'][i]['speaker'])
+	print("Speaker: " + str(transcript['monologues'][i]['speaker']))
 	for j in range(len(item_dict['monologues'][i]['elements'])):
 		print(transcript['monologues'][i]['elements'][j]['value'], end='')
 	print()
